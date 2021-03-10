@@ -8,9 +8,12 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  margin: auto;
   border-radius: 20px;
   margin-bottom: 30px;
   margin-top: 50px;
+  max-width: 1480px;
+  
 }
 
 .navbar-container {
