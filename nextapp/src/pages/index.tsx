@@ -6,7 +6,13 @@ const index = () => {
   return (
     <Container p={10} h="100vh" w="100vw">
       <Heading>Playground example</Heading>
-      <Playground />
+      <Container border="2px solid white" mt={30}>
+        <Playground
+          LiveEditorStyle={{
+            marginTop: "40px",
+          }}
+        />
+      </Container>
     </Container>
   );
 };
