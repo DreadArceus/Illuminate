@@ -5,6 +5,12 @@
   margin-right: -200px;
   color: aliceblue;
   font-size: 22px;
+  
+}
+body{
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background: linear-gradient(270deg, #f72f5a, #073ef1);
 }
 .box {
   min-height: 300px;
@@ -34,7 +40,7 @@
 }
 .ide {
   min-height: 1000px;
-  width: 1410px;
+  min-width: 1410px;
   background: rgb(17, 26, 34);
   border-radius: 30px;
   margin-left: -50px;
