@@ -79,7 +79,7 @@ const react = () => {
         </LiveProvider>
       </Stack>
       <Text fontSize="3xl">Setup</Text>
-      <Stack direction="row" maxH="60vh" spacing="3" p={5}>
+      <Stack direction="row" spacing="3" p={5}>
         <Box>
           <Text maxW="40vw" fontSize="xl">
             First we gather some tools
@@ -114,7 +114,7 @@ const react = () => {
           </UnorderedList>
         </Box>
       </Stack>
-      <Stack maxH="60vh" spacing="3" p={5}>
+      <Stack spacing="3" p={5}>
         <Box>
           <Text maxW="40vw" fontSize="xl">
             Now we will use create-react-app to make our first react app
@@ -141,7 +141,7 @@ const react = () => {
         </Box>
       </Stack>
       <Text fontSize="3xl">Understanding the example app</Text>
-      <Stack direction="row" maxH="60vh" spacing="3" p={5}>
+      <Stack direction="row" spacing="3" p={5}>
         <Box>
           <Text maxW="40vw" fontSize="xl">
             First we should start the example app and see what it is
