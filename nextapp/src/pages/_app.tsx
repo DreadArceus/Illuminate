@@ -1,11 +1,11 @@
 import { ChakraProvider, ColorModeProvider } from "@chakra-ui/react";
 import { createClient, Provider } from "urql";
 
-import "../css/App.css";
-import "../css/styles.css";
-import "../css/Middle.css";
-import "../css/Navbar.css";
-import "../css/Cards.css";
+// import "../css/App.css";
+// import "../css/styles.css";
+// import "../css/Middle.css";
+// import "../css/Navbar.css";
+// import "../css/Cards.css";
 
 import theme from "../theme";
 
