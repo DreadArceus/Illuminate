@@ -1,6 +1,8 @@
+import { useEffect, useState } from "react";
 import Left from "../components/Left";
 import { Middle } from "../components/Middle";
 import Navbar from "../components/Navbar";
+import { useGetGuideMutation } from "../generated/graphql";
 
 const stockContents = [
   { content: "Bruh Moment", classes: "top", key: "2" },
@@ -26,7 +28,17 @@ const stockContents = [
   { content: "Bruh Moment", classes: "boxs", key: "0" },
 ];
 
-function Home() {
+const Home = () => {
+  const [, run] = useGetGuideMutation();
+  const [cont, setCont] = useState([]);
+  useEffect(() => {
+    async () => {
+      const res = await run({ title: "bruh2" });
+      if (res.data?.getGuide) {
+        setCont(res.data.getGuide.body as []);
+      }
+    };
+  });
   return (
     <div className="pepew">
       <div className="container">
@@ -38,5 +50,6 @@ function Home() {
       </div>
     </div>
   );
-}
+};
+
 export default Home;

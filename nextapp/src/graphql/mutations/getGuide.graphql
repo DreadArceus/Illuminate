@@ -1,0 +1,5 @@
+mutation GetGuide($title: String!){
+  getGuide(title: $title){
+    ...BaseGuide
+  }
+}

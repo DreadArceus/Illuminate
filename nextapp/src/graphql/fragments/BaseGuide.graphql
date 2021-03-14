@@ -1,0 +1,25 @@
+fragment BaseGuide on Guide {
+  id
+  createdAt
+  updatedAt
+  title
+  author
+  body {
+    key
+    classes
+    content
+    complexContent {
+      key
+      classes
+      content
+      codeOptions {
+        enable
+        noInline
+      }
+    }
+    codeOptions {
+      enable
+      noInline
+    }
+  }
+}
